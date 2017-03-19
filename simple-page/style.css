@@ -131,8 +131,23 @@ ol,ul,li{
         justify-content: space-between;
     }
     .products>ol>li{
-        width: 50%;
-        max-width: 288px;
+        width: 48%;
+    }
+    .product h3{
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .product p{
+        font-size :20px;
+        line-height: 25px;
+    }
+}
+
+
+@media (min-width:1000px){
+
+    .products>ol>li{
+        width: calc(33.333333% - 16px);
     }
     .product h3{
         font-size: 15px;
