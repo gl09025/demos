@@ -20,3 +20,48 @@ git config --global core.ignorecase false #让git区分大小写
 解决:加如下选项
 
 > –allow-unrelated-histories
+
+
+
+
+
+# SSH配置
+
+1. 检查ssh keys是否存在
+
+   ```
+   ls -al ~/.ssh
+   ```
+
+2. 生成ssh key
+
+   ```
+   ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+   ```
+
+3. 将ssh key添加到ssh-agent
+
+   先确认ssh-agent是可用的
+
+   ```
+   # eval $(ssh-agent -s)
+   Agent pid xxxxx
+   ```
+
+   将ssh key添加到ssh-agent
+
+   ```
+   ssh-add ~/.ssh/id_rsa
+   ```
+
+4. 将ssh key配置到github
+
+   复制key内容
+
+   ```
+   clip < ~/.ssh/id_rsa.pub
+   ```
+
+   ​
+
+   ​
