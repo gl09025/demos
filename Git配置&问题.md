@@ -27,6 +27,26 @@ git config --global core.ignorecase false #让git区分大小写
 
 # SSH配置
 
+## 前言
+
+在没有配置ssh的情况下使用ssh链接操作github库的时候会出现如下异常:
+
+```
+$ git clone git@github.com:linmuxi/test-git.git
+Cloning into 'test-git'...
+Warning: Permanently added the RSA host key for IP address '192.30.252.129' to the list of known hosts.
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+~
+```
+
+
+
+## 步骤
+
 1. 检查ssh keys是否存在
 
    ```
