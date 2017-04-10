@@ -4,8 +4,8 @@
     content:'';
     position: absolute;
     right: 5px;
-    top: 4px;
+    top: 5px;
     display: block;
     border: 6px solid transparent;
-    border-top-color: red;
+    border-top-color: #a1a1a1;
 }

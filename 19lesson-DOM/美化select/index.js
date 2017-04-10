@@ -6,10 +6,10 @@ select.remove() //移除原有的select
 div.style.display = 'inline-block'
 div.style.position = 'relative'
 
-//创建一个div2相对定位于div,制作下拉三角
+//创建一个div2相对定位于div,在CSS中制作下拉三角
 var div2 = document.createElement('div')
 div.appendChild(div2)
-div2.style.border = '1px solid red'
+div2.style.border = '1px solid #E4E4E4'
 div2.style.padding = '0 .5em'
 div2.style.position = 'absolute'
 div2.style.width = '100%'
