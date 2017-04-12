@@ -67,6 +67,7 @@ body{
     height: 170px;
     transform-origin: 0 bottom;
     z-index: 4;
+    transition: all .5s;
 }
 
 .clock>.minute-hand{
