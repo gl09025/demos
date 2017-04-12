@@ -58,9 +58,17 @@ function step(){
     var minutesDeg = minutes * 6 + (seconds * 0.1)
     var secondsDeg = seconds * 6
 
+
+
     document.querySelector('.hour-hand').style.transform = `rotate(${hoursDeg}deg)`
     document.querySelector('.minute-hand').style.transform = `rotate(${minutesDeg}deg)`
     document.querySelector('.second-hand').style.transform = `rotate(${secondsDeg}deg)`
+    if(secondsDeg === 0 ){
+        document.querySelector('.second-hand').style.transition = 'all 0s'
+    }else{
+        document.querySelector('.second-hand').style.transition = 'all .5s'
+    }
+    
     // document.getElementById('clock').removeAttribute("hidden")
 }
   //添加罗马数字
