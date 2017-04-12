@@ -1,6 +1,11 @@
 var button = document.querySelector('#start')
 var total = 2 * 3600 * 1000 //固定两小时倒计时
+var sign = false
 button.addEventListener('click',function(){
+    if(sign){
+        return
+    }
+    sign = true
     var id = setInterval(function(){
         if(total <= 0){
             clearInterval(id)
