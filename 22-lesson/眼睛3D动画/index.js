@@ -17,8 +17,7 @@ var x = 0,
     y = 0
 
 function step() {
-
-    console.log(x, y)
+    //$需要引入jquery
     $('.bigcircle').css({
         transform: 'rotateX(' + x + 'deg) rotateY(' + y + 'deg)'
     })
