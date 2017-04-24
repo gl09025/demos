@@ -9,16 +9,18 @@
 </head>
 
 <body>
-<script src='bom.js'>
-
-</script>
+    <script src='bom.js'>
+    </script>
     <button id=button1>open a window</button>
 
     <script>
-        button1.onclick = function(){
-            let f='width=900px,height=600px'
-//             $.bom.openAtCenter('1018','650','http://www.baidu.com')
-            $.bom.openAtCenter(300,300,'iframe.html')
+        button1.onclick = function() {
+            let f = 'width=900px,height=600px'
+                //             $.bom.openAtCenter('1018','650','http://www.baidu.com')
+                //             $.bom.openAtCenter(300,300,'iframe.html')
+            $.bom.search('a')
+            $.bom.search('a', 'ggg')
+                //                console.log($.bom.search('a','frank'))
         }
     </script>
 
