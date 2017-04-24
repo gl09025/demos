@@ -54,3 +54,11 @@ $.bom = {
 
     }
 }
+
+function search() {
+    let inputName = document.getElementsByTagName('input')[0].value
+    let inputValue = document.getElementsByTagName('input')[1].value
+    $.bom.search(inputName, inputValue)
+
+}
+button1.addEventListener('click', search)
