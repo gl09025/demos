@@ -18,6 +18,9 @@ window.slides = function(element) {
         $swiper_pagination.append(`<span class="swiper-pagination-bullet"></span>`)
     }
     $el.append($swiper_pagination)
+        //给默认第一个span加classname
+    let $span = $($swiper_pagination.find('.swiper-pagination-bullet')[0])
+    $span.addClass('swiper-pagination-bullet-active')
 
     //   $ol.on('click','li',function(e){
     //     let $li = $(e.currentTarget)
