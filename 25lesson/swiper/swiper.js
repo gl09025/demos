@@ -60,6 +60,31 @@ window.slides = function(element) {
         } else if (index >= count) {
             index = 0
         }
+        //当index为0时,做个假的第一个,制作轮播效果
+        if (index === 0) {
+            let $li = $el.find('.slide').eq(0).clone()
+            $li.appendTo($view) //插入第一个区块到最后一个
+                //添加了一个的动画
+            let number = -width * count
+            $view.css({
+                    transform: `translateX(${number}px)`
+                })
+                //绑定动画结束事件
+            $view.one('transitionend', function() {
+                $li.remove()
+                let oldTransition = $view.css('transition')
+                $view.css({
+                    transition: 'none',
+                    transform: 'translateX(0px)'
+                })
+                $view.offset() //分开上下两个动画阶段,防止合并
+                $view.css('transition', oldTransition)
+                currentIndex = index
+                becomeActive(currentIndex)
+            })
+            return
+        }
+
         let number = -width * index
         $view.css({
             transform: `translateX(${number}px)`
