@@ -1,3 +1,4 @@
+$(function(){
 
 var swiper = new Swiper('#firstswiper', {
     pagination: '.swiper-pagination',
@@ -62,3 +63,4 @@ if (
     }
 }
 });
+})

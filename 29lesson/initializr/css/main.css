@@ -18,7 +18,6 @@
     padding-top: 20px;
 }
 
-.imgdiv{}
 .wrapper nav{
     list-style: none;
 }
@@ -47,6 +46,21 @@
   width: 100%;
 }
 
+@media(max-width: 450px){
+    .wrapper nav li{
+        margin-left: 14px;
+    }
+}
+
+@media(max-width:320px){
+    .wrapper nav ul{
+        columns: 2;
+    }
+
+    .wrapper .imgdiv{
+        margin-right: 20px;
+    }
+}
 /*second*/
 .welcome{
     margin-top: 70px;
@@ -59,8 +73,8 @@
 }
 .welcome-font{
     position: relative;
-    background-image: url("../img/headcontainer.png");
-    background-size: 100% 100% cover;
+    background: url("../img/headcontainer.png") no-repeat center center;
+    background-size: cover;
     width: 100%;
     height: 783px;
 }
@@ -98,6 +112,12 @@
     text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
 }
 
+@media (max-width:425px){
+.font{
+    right: 20%;
+    bottom: 1%;
+}
+}
 /*third part*/
 .whatwedo{
     height: 1000px;
@@ -160,6 +180,15 @@ table>tbody>tr>th{
     text-align: left;
 }
 
+@media(max-width:425px){
+    .whatwedo{
+        flex-wrap: wrap;
+    }
+
+    .redlinediv{
+        margin: auto;
+    }
+}
 
 /*fourth*/
 .fourthpart{
@@ -183,6 +212,31 @@ table>tbody>tr>th{
 
 .ourlastestwork>.redline{
     margin-bottom: 150px;
+}
+@media (max-width: 768px){
+    #firstswiper {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+@media(max-width: 425px){
+    .fourthpart{
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width: 320px){
+    #firstswiper>.swiper-wrapper>.swiper-slide>img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #firstswiper{
+        overflow: initial;
+    }
+    
 }
 
 /*five*/
@@ -210,6 +264,15 @@ table>tbody>tr>th{
     display: inline-block;
     width: 100px;
 }
+
+
+@media(max-width: 320px){
+    .daily-down>.swiper-container>.swiper-wrapper>.swiper-slide>img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
 
 /*footer*/
 .footer-container .contact-image ul{
@@ -273,3 +336,6 @@ table>tbody>tr>th{
     color: #000;
 }
 
+@media screen and(max-with:768px){
+
+}
