@@ -31,6 +31,18 @@ var server = http.createServer(function(request, response){
     var string = fs.readFileSync('./page2.json')
     response.setHeader('Content-Type','application/xml')
     response.end(string)
+  }else if( path === '/page3.json'){
+    var string = fs.readFileSync('./page3.json')
+    response.setHeader('Content-Type','application/xml')
+    response.end(string)
+  }else if( path === '/page4.json'){
+    var string = fs.readFileSync('./page4.json')
+    response.setHeader('Content-Type','application/xml')
+    response.end(string)
+  }else if( path === '/page5.json'){
+    var string = fs.readFileSync('./page5.json')
+    response.setHeader('Content-Type','application/xml')
+    response.end(string)
   }else{
     response.end('404')
   }

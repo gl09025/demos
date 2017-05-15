@@ -9,13 +9,13 @@
         ol{
             display: flex;
             flex-wrap: wrap;
+            width: 1189px;
         }
         li{
-            max-width: 1188px;
             list-style: none;
         }
         img{
-            max-width: 297px;
+            width: 297px;
         }
     </style>
 </head>
@@ -33,7 +33,7 @@
             page += 1
             var object = JSON.parse(request.responseText)
             let hasNextPage = object.hasNextPage
-            let array = object.items
+            let array = object.items            
             if (!hasNextPage){
                 btn.disabled = true
             }
