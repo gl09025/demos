@@ -1,0 +1,79 @@
+body{
+    background-color: #889CB0;
+    font-size: 20px;
+}
+
+.main {
+    background-color: #ffffff;
+    max-width: 272px;
+    min-height: 500px;
+    margin:0 auto;
+    padding: 50px;
+    padding-right: 0;
+}
+
+p{
+    margin:0;
+}
+.p2{
+    color: rgba(0,0,0,0.5);
+    margin-bottom: 30px;
+}
+
+input[type="submit"]{
+    margin-top: 40px;
+}
+input[type="email"],input[type="password"]{
+    border:none;
+}
+
+input[type="email"]:focus,input[type="password"]:focus{
+    outline:none;
+}
+input[type="email"]:focus~.line,input[type="password"]:focus~.line{
+    outline:none;
+    visibility: visible;
+    width: 64%;
+}
+.password{
+    margin-top: 20px;
+}
+
+.p_end{
+    margin-top: 40px;
+    font-size: 15px;
+}
+
+.line{
+    border-bottom: 2px solid #34A2DF;
+    transition: width 0.4s;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+input[type="submit"]{
+    border:none;
+    background-color: transparent;
+    font-size: 1em;
+    cursor: pointer;
+    color: #34A2DF;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
