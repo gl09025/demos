@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Leancloud Demo</title>
+</head>
+
+<body>
+    <div id="welcome"></div>
+    <button id="logout" hidden>登出</button>
+    <form name="signIn">
+        <input type="text" name="username" placeholder="用户名">
+        <input type="email" name="email" placeholder="邮箱">
+        <input type="password" name="password" placeholder="密码">
+        <input type="submit" value="注册">
+    </form>
+    <form name="logIn">
+        <input type="text" name="username" placeholder="用户名">
+        <input type="password" name="password" placeholder="密码">
+        <input type="submit" value="登录">
+    </form>
+
+    <script src="//cdn1.lncld.net/static/js/2.5.0/av-min.js"></script>
+    <script>
+        var APP_ID = 'X6XmoomuzMNGvrKANQQyumY2-gzGzoHsz';
+        var APP_KEY = 'Tkll9OJIXV0W3rDurDkF1axs';
+        AV.init({
+            appId: APP_ID,
+            appKey: APP_KEY
+        });
+
+        let user = AV.User.current()
+        console.log(user)
+        if (user) {
+            // alert('welcome ' + )
+            welcome.textContent = '你好 ' + user.attributes.username
+            logout.removeAttribute('hidden')
+        }
+
+        let sigInForm = document.querySelector('form[name=signIn]')
+        logout.onclick = function() {
+            AV.User.logOut()
+            window.location.reload()
+        }
+        sigInForm.addEventListener('submit', function(e) {
+            e.preventDefault()
+            // 新建 AVUser 对象实例
+            var user = new AV.User();
+            // 设置用户名
+            user.setUsername(sigInForm.username.value);
+            // 设置密码
+            user.setPassword(sigInForm.password.value);
+            // 设置邮箱
+            user.setEmail(sigInForm.email.value);
+            user.signUp().then(function (loginedUser) {
+                console.log(loginedUser);
+                window.location.reload()
+            }, function (error) {
+                console.log(error)
+            });
+        })
+
+        let logInForm = document.querySelector('form[name=logIn]')
+        logInForm.onsubmit = function(e) {
+            e.preventDefault()
+            let username = logInForm.username.value
+            let password = logInForm.password.value
+            AV.User.logIn(username, password).then(function (loginedUser) {
+                console.log(loginedUser);
+                window.location.reload()
+            }, function (error) {
+                if(error.code === 210){
+                    alert('用户名和密码不匹配')
+                }else if (error.code === 211){
+                    alert('用户名不存在')
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
