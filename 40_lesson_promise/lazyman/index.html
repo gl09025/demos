@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lazyman</title>
+</head>
+
+<body>
+<p><a href="http://hushicai.com/2015/05/07/a-frontend-interview-question-of-weixin.html">参考这里的答案</a></p>
+    <script>
+        function createWaitPromise(second) {
+            return new Promise(function (resolve, reject) {
+                setTimeout(function () {
+                    resolve('Wake up after ' + second);
+                }, second * 1000);
+            });
+        }
+
+        function LazyMan(name) {
+            var p = new Promise(function (resolve, reject) {
+                resolve('Hi! This is ' + name + '!');
+            });
+
+            return {
+                sleep: function (second) {
+                    p = p.then(function (msg) {
+                        console.log(msg);
+                        return createWaitPromise(second);
+                    });
+                    return this;
+                },
+                sleepFirst: function (second) {
+                    var op = p;
+                    p = createWaitPromise(second).then(function (msg) {
+                        console.log(msg);
+                        return op;
+                    });
+                    return this;
+                },
+                eat: function (part) {
+                    var pn = new Promise(function (resolve) {
+                        resolve('Eat ' + part + '~');
+                    });
+                    p = p.then(function (msg) {
+                        console.log(msg);
+                        return pn;
+                    });
+                    return this;
+                },
+                print: function () {
+                    return p.then(function (msg) {
+                        console.log(msg);
+                    });
+                }
+            };
+        }
+        LazyMan("Hank").eat("dinner").eat("supper")
+
+    </script>
+</body>
+
+</html>
