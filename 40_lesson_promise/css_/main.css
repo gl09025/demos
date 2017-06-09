@@ -1,26 +1,24 @@
-
-.container{
+.container {
     position: relative;
     border-radius: 10px;
     height: 200px;
     width: 100px;
     padding: 20px;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
-.jonface .hair{
+.jonface .hair {
     top: 33px;
     height: 93px;
     width: calc(94px + 10px);
     margin-left: calc((-94px + -10px) / 2);
     border-radius: 48px 48px 40px 40px;
-
     position: absolute;
     background: #5C2523;
     left: 50%;
 }
 
-.jonface .ears{
+.jonface .ears {
     position: absolute;
     top: 45%;
     left: 50%;
@@ -28,14 +26,11 @@
     height: 110px;
     margin-top: calc(-110px / 2);
     margin-left: calc(-94px / 2);
-
-
 }
 
-.jonface .ears:before{
+.jonface .ears:before {
     left: -11px;
     border-radius: 22px 11px 11px 22px;
-
     content: "";
     position: absolute;
     top: 44%;
@@ -45,10 +40,9 @@
     z-index: 10;
 }
 
-.jonface .ears:after{
+.jonface .ears:after {
     right: -11px;
     border-radius: 11px 22px 22px 11px;
-
     content: "";
     position: absolute;
     top: 44%;
@@ -58,7 +52,7 @@
     z-index: 10;
 }
 
-.jonface header{
+.jonface header {
     border-radius: 40px 40px 50px 50px;
     position: absolute;
     top: 45%;
@@ -71,14 +65,14 @@
     overflow: hidden;
 }
 
-.jonface header .eyes{
+.jonface header .eyes {
     position: absolute;
     top: 37%;
     left: 50%;
-
 }
 
-.jonface header .eyes:before,.jonface header .eyes:after{
+.jonface header .eyes:before,
+.jonface header .eyes:after {
     content: "";
     position: absolute;
     top: 0;
@@ -96,7 +90,7 @@
     right: 11px;
 }
 
-.jonface header .nose{
+.jonface header .nose {
     position: absolute;
     top: 53%;
     left: 50%;
@@ -108,7 +102,7 @@
     border-radius: 0 10px 10px;
 }
 
-.jonface header .mouth{
+.jonface header .mouth {
     position: absolute;
     top: 42%;
     left: 50%;
@@ -120,6 +114,6 @@
     border-color: transparent transparent #171717 transparent;
 }
 
-.clear{
-    clear:both;
+.clear {
+    clear: both;
 }
