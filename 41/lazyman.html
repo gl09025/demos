@@ -1,63 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-        function LazyMan(name){
+        function LazyMan(name) {
             let api = {
-                sleep:function(seconds){
-                    taskList.push(function(){
-                        setTimeout(function() {
+                sleep: function (seconds) {
+                    taskList.push(function () {
+                        setTimeout(function () {
                             console.log(`Wake up after ${seconds}`)
                             doOneThing()
                         }, seconds * 1000);
                     })
                     return this
                 },
-                eat:function(what){
-                    taskList.push(function(){
+                eat: function (what) {
+                    taskList.push(function () {
                         console.log(`Eat ${what}`)
                         doOneThing()
                     })
                     return this
                 },
-                sleepFirst:function(seconds){
-                    taskList.unshift(function(){
-                        setTimeout(function() {
+                sleepFirst: function (seconds) {
+                    taskList.unshift(function () {
+                        setTimeout(function () {
                             console.log(`Wake up after ${seconds}`)
                             doOneThing()
                         }, seconds * 1000);
                     })
                     return this
                 },
-                hi:function(name){
-                    taskList.push(function(){
+                hi: function (name) {
+                    taskList.push(function () {
                         console.log(`Hi ,this is ${name}`)
                         doOneThing()
                     })
                     return this
                 }
             }
-        let taskList =[]
-        let doOneThing = function(){
-            let fn = taskList.shift()
-            fn && fn.call()
+            let taskList = []
+            let doOneThing = function () {
+                let fn = taskList.shift()
+                fn && fn.call()
+            }
+            api.hi(name)
+            setTimeout(function () {
+                doOneThing()
+            }, 0)
+            return api
         }
-        api.hi(name)
-        setTimeout(function(){
-            doOneThing()
-        },0)
-        return api
-        }
-//LazyMan('Hank')
-// LazyMan('Hank').sleep(3).eat('dinner')
-// LazyMan('Hank').sleepFirst(3).eat('supper')
- LazyMan('Hank').eat('dinner').eat('supper')
+        //LazyMan('Hank')
+        // LazyMan('Hank').sleep(3).eat('dinner')
+        // LazyMan('Hank').sleepFirst(3).eat('supper')
+        LazyMan('Hank').eat('dinner').eat('supper')
     </script>
 </body>
+
 </html>
