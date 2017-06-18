@@ -1,0 +1,169 @@
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    border-bottom: 1px solid #162C38;
+    color: #995256;
+}
+
+@font-face {
+    font-family: 'iconfont';  /* project id 329469 */
+    src: url('//at.alicdn.com/t/font_uqngo9dlc9olmcxr.eot');
+    src: url('//at.alicdn.com/t/font_uqngo9dlc9olmcxr.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_uqngo9dlc9olmcxr.woff') format('woff'),
+    url('//at.alicdn.com/t/font_uqngo9dlc9olmcxr.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_uqngo9dlc9olmcxr.svg#iconfont') format('svg');
+}
+/* page css */
+#resume {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    background-color: #fff;
+    font-family: 'iconfont';
+}
+#personalInfo {
+    width: 30%;
+    background-color: #162C38;
+    padding: 34px 0 0;
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+}
+#personalInfo .protrait img {
+    width: 40%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.personal {
+    text-align: center;
+    /*padding-bottom: 25px;*/
+    /*border-bottom: 1px solid #;*/
+}
+
+.personal>div:nth-child(3) {
+    margin: 32px 0 0px -44px;
+    text-align: center;
+}
+.basic {
+    display: inline-block;
+    text-align: left;
+}
+.basic>h3 {
+    margin-top: 42px;
+    padding: 38px 0 8px 0;
+    border-top: 1px dashed #ccc;
+}
+.basic>div {
+    margin: 16px 0 28px 0;
+}
+.basic>div>a {
+    color: white;
+}
+/* main css */
+#main {
+    width: 60%;
+    margin: 20px 0 0 40px;
+    flex-grow: 1;
+    position: relative;
+}
+#main>div {
+    width: 90%;
+}
+#main h2 {
+    padding: 20px 0;
+    margin-bottom: 20px;
+    border-bottom: 2px dashed #ccc;
+    color: #26485E;
+}
+#main .taken {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #DB6C2E;
+    position: absolute;
+    left: -9px;
+    /*top: 2px;*/
+}
+.leftLine {
+    margin-top: 40px;
+    padding-left: 30px;
+    border-left: 1px dashed #985358;
+}
+.leftLine>div {
+    margin-bottom: 25px;
+}
+.common {
+    margin: 10px 0;
+}
+.introduce {
+    padding: 10px 0;
+}
+#main ul {
+    margin-left: 20px;
+    font-family: initial;
+}
+.skill h4 {
+    margin: 10px 0;
+}
+.skill ul {
+    margin: 10px 0 10px 22px;
+}
+.skill>div>div>dt,
+.skill>div>div>dd {
+    display: inline-block;
+    margin-left: 20px;
+}
+.self>p {
+    padding: 20px 0;
+    text-indent: 2em;
+}
+.self>p+p{
+    padding-top: 0;
+}
+.graphy {
+    background-color: #162C38;
+    margin-left: 5px;
+    border-radius: 18px;
+}
+.graphy>h3 {
+    padding: 10px 0;
+    color: white;
+}
+#chart {
+    margin: 0 auto;
+}
+.pdf {
+    text-align: right;
+}
+.pdf a {
+    /* text-decoration: none; */
+    /* border: 1px; */
+    border: none;
+}
+.preview span {
+    border: 1px solid #162c38;
+    border-radius: 20px;
+    /* width: 93px; */
+    display: inline-block;
+    padding: 2px 14px;
+    margin: 12px 0 0 20px;
+    font-size: 12px;
+    color: #995256;
+}
+.preview>span>a {
+    text-decoration: none;
+    border: none;
+}
+.preview>span:hover {
+    background-color: #f1c69a;
+    opacity: 0.7;
+    /* color: white; */
+}
+.taken+h4 {
+    color: #995256;
+}
