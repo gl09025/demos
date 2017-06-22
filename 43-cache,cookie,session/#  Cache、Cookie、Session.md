@@ -1,4 +1,4 @@
-# 直播第四十二课  Cache、Cookie、Session
+# 四十二  Cache、Cookie、Session
 
 [HTTP缓存控制小结](http://imweb.io/topic/5795dcb6fb312541492eda8c)
 
