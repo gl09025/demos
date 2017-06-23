@@ -40,10 +40,8 @@ body {
     right: 0;
     bottom: 0;
     top: 0;
-    background-image: url(./images/song/song-img-background.png);
     opacity: 1;
-    background-position: 50%;
-    background-repeat: no-repeat;
+    background: url(./images/song/song-img-background.png) no-repeat 50%;
     background-size: auto 100%;
     transform: scale(1.5);
     transform-origin: center top;
@@ -111,7 +109,6 @@ body {
     bottom: 0;
     background-image: url(./images/song/disc_light-ip6.png);
     background-size: contain;
-    !*animation: circling 20s infinite linear;*!
     z-index: 3;
 }
 
@@ -172,7 +169,7 @@ body {
 .m-song-disc.playing .m-song-turn:after{
     animation: circling 20s infinite linear;
 }
-!*歌词部分*!
+/*歌词部分*/
 .m-song-info {
     padding: 0 35px;
     margin-top: 25px;
@@ -199,15 +196,21 @@ body {
 }
 
 .m-song-lrc {
-    argin-top: 14px;
+    margin-top: 14px;
 }
 
-.m-song-pure {
+.m-song-scroll {
     font-size: 16px;
-    color: hsla(0,0%,100%,.6);
+    line-height: 1.5;
+    overflow: hidden;
     text-align: center;
-    line-height: 1;
-    padding-top: 18px;
+    color: hsla(0,0%,100%,.6);
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.m-song-iner {
+    transition: -webkit-transform .3s ease-out;
+    transition: transform .3s ease-out,-webkit-transform .3s ease-out;
 }
 
 /*页脚部分*/
@@ -232,18 +235,17 @@ body {
     height: 36px;
     line-height: 36px;
     padding: 0 6px;
-    border: 1px solid #adadad;
+    border: 1px solid #d43b32;
     border-radius: 4px;
     text-align: center;
     box-sizing: border-box;
     margin-left: 0;
-    olor: #d43b32;
+    color: #d43b32;
     -webkit-box-flex: 1;
     flex: 1 1 auto;
     width: 1%;
     font-size: 15px;
     background-color: transparent;
-    border-color: #d43b32;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
@@ -252,13 +254,12 @@ body {
     height: 36px;
     line-height: 36px;
     padding: 0 6px;
-    border: 1px solid #adadad;
+    border: 1px solid #d43b32;
     border-radius: 4px;
     text-align: center;
     box-sizing: border-box;
     color: #fff;
     background-color: #d43b32;
-    border-color: #d43b32;
     -webkit-box-flex: 1;
     flex: 1 1 auto;
     width: 1%;
