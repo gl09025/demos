@@ -43,15 +43,37 @@ $(function(){
             $p.appendTo($lyric.children('.m-song-iner'))
         })
 
-        //获取歌曲名
+        //获取歌曲名和歌手
         let {name} = song
-
-
-        //获取歌手名
         let {singer} = song
+        let $msongh2 = `
+        <span class="m-song-sname" data-reactid="11">${name}</span>
+        <span class="m-song-gap" data-reactid="12">-</span><b class="m-song-autr" data-reactid="13">${singer}</b>
+        `
+        $('.m-song-h2').append($msongh2)
+
+        //封面和背景
+        let {cover} = song
+        console.log(song)
+        let backgroundCover = song['background-cover']
+        console.log(backgroundCover)
+
+        let $uImg = `<img class="u-img" src="${cover}" data-reactid="8">`
+        $('.m-song-img').append($uImg)
+        // $(".m-song-bg").css('background-image', 'url(' + backgroundCover + ')');
+        $(".m-song-bg").css({'background-image': 'url(' + backgroundCover + ')',
+            'background-repeat': 'no-repeat',
+            'background-position': '50%',
+            'background-size': 'auto 100%'
+        })
+
     },function(){
         alert('false')
     })
+
+
+/* <img class="u-img" src="./images/song/song-img.png" data-reactid="8">*/
+
 
  /*   $.get('./lyric.json').then(function(object){
         let {lyric} = object

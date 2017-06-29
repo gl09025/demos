@@ -41,8 +41,8 @@ body {
     bottom: 0;
     top: 0;
     opacity: 1;
-    background: url(./images/song/song-img-background.png) no-repeat 50%;
-    background-size: auto 100%;
+/*    background: url(./images/song/song-img-background.png) no-repeat 50%;
+    background-size: auto 100%;*/
     transform: scale(1.5);
     transform-origin: center top;
     z-index: -1;
