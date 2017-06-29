@@ -296,6 +296,11 @@ a, a:visited {
     font-size: 13px;
 }
 
+/*加载动画*/
+.remd_newsg .load-image{
+    text-align: center;
+}
+
 /*最新音乐*/
 .m-homeremd .remd_newsg {
     position: relative;
