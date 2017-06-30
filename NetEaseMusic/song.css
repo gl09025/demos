@@ -178,6 +178,7 @@ body {
 
 }
 
+
 .m-song-h2 {
     font-size: 18px;
     text-align: center;
@@ -213,6 +214,10 @@ body {
 .m-song-iner {
     transition: -webkit-transform .3s ease-out;
     transition: transform .3s ease-out,-webkit-transform .3s ease-out;
+}
+
+.m-song-iner p.active {
+    color: #fff;
 }
 
 /*页脚部分*/
