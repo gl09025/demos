@@ -160,6 +160,15 @@ a, a:visited {
     line-height: 40px;
 }
 
+/*切换显示*/
+.tableContent > li{
+    display: none;
+}
+
+.tableContent > li.active {
+    display: block;
+}
+
 .m-tabarea-index .u-tab:after {
     border-color: #ccc;
     z-index: 0;
@@ -306,6 +315,8 @@ a, a:visited {
     position: relative;
     min-height: 100px;
 }
+
+
 
 .m-sgitem {
     padding-left: 10px;
@@ -460,4 +471,10 @@ a, a:visited {
     line-height: 16px;
     -webkit-transform: scale(.75);
     transform: scale(.75);
+}
+
+/*热歌榜和搜索加载动画*/
+.tableContent .load-image2,
+.tableContent .load-image3{
+    text-align: center;
 }
