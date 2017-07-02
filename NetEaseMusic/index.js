@@ -69,78 +69,35 @@ $(function () {
                 alert("失败")
             })
         } else if (index === 2) {
-            /*            $.get('./page3.json').then((response)=>{
-             $li.text(response.content)
-             $li.attr('data-downloaded','yes')
-             })*/
-
-            /*           var availableTags = [
-             "ActionScript",
-             "AppleScript",
-             "Asp",
-             "BASIC",
-             "C",
-             "C++",
-             "Clojure",
-             "COBOL",
-             "ColdFusion",
-             "Erlang",
-             "Fortran",
-             "Groovy",
-             "Haskell",
-             "Java",
-             "JavaScript",
-             "Lisp",
-             "Perl",
-             "PHP",
-             "Python",
-             "Ruby",
-             "Scala",
-             "Scheme",
-             "Fade"
-             ];
-             $( "#tags" ).autocomplete({
-             source: availableTags
-             })*/
-
-
             $('.load-image3').remove()
         }
     })
 
     let timer = undefined
-    $('input#tags').on('input',function(e){
+    $('input#tags').on('input', function (e) {
         let $input = $(e.currentTarget)
         let value = $input.val().trim()
-        if ( value === '') {
+        if (value === '') {
             return
         }
-
-        if (timer){
+        if (timer) {
             clearTimeout(timer)
         }
 
-        timer = setTimeout(function(){
-            search(value).then((result)=>{
-                console.log(result)
+        timer = setTimeout(function () {
+            search(value).then((result) => {
                 if (result.length !== 0) {
-                    console.log('1')
-
-                    $('#output').text(result.map((r)=>r.name).join(','))
-                    result.map(function(result){
+                    $('#output').text(result.map((r) => r.name).join(','))
+                    result.map(function (result) {
                         let $li = `<li class="recomitem"><i class="u-svg u-svg-search"></i><span class="f-bd f-bd-btm f-thide">${result.name}</span></li>`
                         $('#output').html($li)
                     })
-
-
-
-                    console.log(result.map((r)=>r.name).join(','))
-                }else {
+                } else {
                     let $li = `<li class="recomitem"><span class="f-bd f-bd-btm f-thide">没有结果</span></li>`
                     $('#output').html($li)
                 }
             })
-        },300)
+        }, 300)
 
     })
 
