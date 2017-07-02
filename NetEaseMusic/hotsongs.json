@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "url": "./Alan Walker - Faded.mp3",
+    "name": "追光者",
+    "singer": "岑宁儿",
+    "album": "电视剧《夏至未至》插曲",
+    "cover": "./images/song/song-img.png",
+    "background-cover": "./images/song/song-img-background.png"
+  },
+  {
+    "id": 2,
+    "url": "./薛之谦 - 演员.mp3",
+    "name": "童话镇",
+    "singer": "陈一发儿",
+    "album": "童话镇",
+    "cover": "./images/song/演员.jpg",
+    "background-cover": "./images/song/演员-background.jpg"
+  },
+  {
+    "id": 3,
+    "url": "./薛之谦 - 演员.mp3",
+    "name": "成都",
+    "singer": "赵雷",
+    "album": "成都",
+    "cover": "./images/song/演员.jpg",
+    "background-cover": "./images/song/演员-background.jpg"
+  },
+  {
+    "id": 4,
+    "url": "./薛之谦 - 演员.mp3",
+    "name": "安和桥",
+    "singer": "宋冬野",
+    "album": "安和桥北",
+    "cover": "./images/song/演员.jpg",
+    "background-cover": "./images/song/演员-background.jpg"
+  },
+  {
+    "id": 5,
+    "url": "./薛之谦 - 演员.mp3",
+    "name": "暧昧",
+    "singer": "薛之谦",
+    "album": "暧昧",
+    "cover": "./images/song/演员.jpg",
+    "background-cover": "./images/song/演员-background.jpg"
+  },
+  {
+    "id": 6,
+    "url": "./薛之谦 - 演员.mp3",
+    "name": "说散就散",
+    "singer": "JC",
+    "album": "说散就散",
+    "cover": "./images/song/演员.jpg",
+    "background-cover": "./images/song/演员-background.jpg"
+  },
+  {
+    "id": 7,
+    "url": "./薛之谦 - 演员.mp3",
+    "name": "刚好遇见你",
+    "singer": "李玉刚",
+    "album": "刚好遇见你",
+    "cover": "./images/song/演员.jpg",
+    "background-cover": "./images/song/演员-background.jpg"
+  },
+  {
+    "id": 8,
+    "url": "./薛之谦 - 演员.mp3",
+    "name": "全部都是你",
+    "singer": "Dragon Pig / CNBALLER / CLOUD WANG",
+    "album": "全部都是你",
+    "cover": "./images/song/演员.jpg",
+    "background-cover": "./images/song/演员-background.jpg"
+  },
+  {
+    "id": 9,
+    "url": "./薛之谦 - 演员.mp3",
+    "name": "Shape of You",
+    "singer": "Ed Sheeran",
+    "album": "Shape Of You",
+    "cover": "./images/song/演员.jpg",
+    "background-cover": "./images/song/演员-background.jpg"
+  },
+  {
+    "id": 10,
+    "url": "./薛之谦 - 演员.mp3",
+    "name": "下一站茶山刘",
+    "singer": "房东的猫",
+    "album": "拾贰",
+    "cover": "./images/song/演员.jpg",
+    "background-cover": "./images/song/演员-background.jpg"
+  },
+  {
+    "id": 11,
+    "url": "./薛之谦 - 演员.mp3",
+    "name": "Despacito (Remix)",
+    "singer": "Luis Fonsi / Daddy Yankee / Justin Bieber",
+    "album": "Despacito (Remix)",
+    "cover": "./images/song/演员.jpg",
+    "background-cover": "./images/song/演员-background.jpg"
+  },
+  {
+    "id": 12,
+    "url": "./薛之谦 - 演员.mp3",
+    "name": "小半",
+    "singer": "陈粒",
+    "album": "小梦大半",
+    "cover": "./images/song/演员.jpg",
+    "background-cover": "./images/song/演员-background.jpg"
+  },
+  {
+    "id": 13,
+    "url": "./薛之谦 - 演员.mp3",
+    "name": "마지막처럼",
+    "singer": "BLACKPINK",
+    "album": "마지막처럼",
+    "cover": "./images/song/演员.jpg",
+    "background-cover": "./images/song/演员-background.jpg"
+  },
+  {
+    "id": 14,
+    "url": "./薛之谦 - 演员.mp3",
+    "name": "理想三旬",
+    "singer": "陈鸿宇",
+    "album": "浓烟下的诗歌电台",
+    "cover": "./images/song/演员.jpg",
+    "background-cover": "./images/song/演员-background.jpg"
+  },
+  {
+    "id": 15,
+    "url": "./薛之谦 - 演员.mp3",
+    "name": "岁月神偷",
+    "singer": "金玟岐",
+    "album": "金玟岐作品集",
+    "cover": "./images/song/演员.jpg",
+    "background-cover": "./images/song/演员-background.jpg"
+  },
+  {
+    "id": 16,
+    "url": "./薛之谦 - 演员.mp3",
+    "name": "告白气球",
+    "singer": "周杰伦",
+    "album": "周杰伦的床边故事",
+    "cover": "./images/song/演员.jpg",
+    "background-cover": "./images/song/演员-background.jpg"
+  },
+  {
+    "id": 17,
+    "url": "./薛之谦 - 演员.mp3",
+    "name": "可乐",
+    "singer": "赵紫骅",
+    "album": "赵浴辰原创demo精选",
+    "cover": "./images/song/演员.jpg",
+    "background-cover": "./images/song/演员-background.jpg"
+  },
+  {
+    "id": 18,
+    "url": "./薛之谦 - 演员.mp3",
+    "name": "Faded",
+    "singer": "Alan Walker",
+    "album": "Faded",
+    "cover": "./images/song/演员.jpg",
+    "background-cover": "./images/song/演员-background.jpg"
+  },
+  {
+    "id": 19,
+    "url": "./薛之谦 - 演员.mp3",
+    "name": "Something Just Like This",
+    "singer": "The Chainsmokers / Coldplay",
+    "album": "Something Just Like This",
+    "cover": "./images/song/演员.jpg",
+    "background-cover": "./images/song/演员-background.jpg"
+  },
+  {
+    "id": 20,
+    "url": "./薛之谦 - 演员.mp3",
+    "name": "再也没有",
+    "singer": "Ryan.B / AY楊佬叁",
+    "album": "再也没有",
+    "cover": "./images/song/演员.jpg",
+    "background-cover": "./images/song/演员-background.jpg"
+  }
+]

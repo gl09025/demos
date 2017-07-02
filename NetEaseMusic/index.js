@@ -8,17 +8,16 @@ $(function(){
             let $li = $(`<a class="m-sgitem" href="./song.html?id=${i.id}">
     <div class="sgfr f-bd f-bd-btm">
     <div class="sgchfl">
-    <div class="f-thide sgtl"><!-- react-text: 124 -->${i.name}<!-- /react-text --></div>
+    <div class="f-thide sgtl">${i.name}</div>
 <div class="f-thide sginfo"><i class="u-hmsprt sghot"></i>
-    <!-- react-text: 127 -->${i.singer}<!-- /react-text --><!-- react-text: 128 --> -
-    <!-- /react-text --><!-- react-text: 129 -->${i.album}
+    ${i.singer} - ${i.album}
 <!-- /react-text --></div>
 </div>
 <div class="sgchfr"><span class="u-hmsprt sgchply"></span></div>
     </div>
     </a>           
 `)
-            $('.m-sglst').append($li)
+            $('.m-sglst-index').append($li)
         })
         $('.load-image').remove()
     },function(){
@@ -44,10 +43,30 @@ $(function(){
             return
         }
         if (index === 1){
-            $.get('./page2.json').then((response)=>{
+            $.get('./hotsongs.json').then(function(response){
+                console.log('1')
                 console.log(response)
-                $li.text(response.content)
+                let items = response
+                items.forEach((i)=>{
+                    let $li = $(`<a class="m-sgitem" href="#">
+    <div class="sgfl sgfl-cred">${i.id}</div>
+    <div class="sgfr f-bd f-bd-btm">
+    <div class="sgchfl">
+    <div class="f-thide sgtl">${i.name}</div>
+<div class="f-thide sginfo"><i class="u-hmsprt sghot"></i>
+    ${i.singer} - ${i.album}
+<!-- /react-text --></div>
+</div>
+<div class="sgchfr"><span class="u-hmsprt sgchply"></span></div>
+    </div>
+    </a>           
+`)
+                    $('.m-sglst').append($li)
+                })
                 $li.attr('data-downloaded','yes')
+                $('.load-image2').remove()
+            },function(){
+                alert("失败")
             })
         }else if (index === 2){
             $.get('./page3.json').then((response)=>{
