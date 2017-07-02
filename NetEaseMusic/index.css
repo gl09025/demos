@@ -346,25 +346,6 @@ a, a:visited {
     padding: 0 10px;
 }
 
-.f-bd:after {
-    position: absolute;
-    z-index: 2;
-    content: "";
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    -webkit-transform-origin: top left;
-    transform-origin: top left;
-    border: 0 solid rgba(0,0,0,.1);
-}
-
-.f-bd-btm:after {
-    border-bottom-width: 1px;
-}
-
 .f-thide {
     white-space: nowrap;
     word-break: normal;
@@ -394,24 +375,6 @@ a, a:visited {
     -webkit-box-align: center;
     align-items: center;
     padding: 0 10px;
-}
-
-.f-bd:after {
-    position: absolute;
-    z-index: 2;
-    content: "";
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    -webkit-transform-origin: top left;
-    transform-origin: top left;
-    border: 0 solid rgba(0,0,0,.1);
-}
-.f-bd-btm:after {
-    border-bottom-width: 1px;
 }
 
 .u-hmsprt {
@@ -572,3 +535,93 @@ a, a:visited {
     background: url('./svg/arrow-right.svg') 100% no-repeat;
     background-size: 7px 12px;
 }
+
+/*搜索页面*/
+.m-input {
+    padding: 15px 10px;
+}
+.f-bd {
+    position: relative;
+}
+.m-input .inputcover {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    background: #ebecec;
+    border-radius: 30px;
+}
+
+.u-svg-srch {
+    position: absolute;
+    left: 0;
+    top: 9px;
+    margin: 0 8px;
+    vertical-align: middle;
+    width: 13px;
+    height: 13px;
+    background-image: url(./svg/search.svg);
+}
+
+.input {
+    width: 100%;
+    height: 30px;
+    line-height: 18px;
+    background: transparent;
+    font-size: 14px;
+    color: #333;
+    border: 0;
+}
+
+.input:focus {
+    outline: 0;
+}
+
+.holder {
+    position: absolute;
+    left: 30px;
+    top: 5px;
+    font-size: 14px;
+    color: #c9c9c9;
+    background: transparent;
+    pointer-events: none;
+}
+
+/*搜索结果样式*/
+
+.recomitem {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 45px;
+    padding-left: 10px;
+}
+
+.u-svg-search {
+    width: 15px;
+    height: 15px;
+    background-image: url(./svg/search.svg);
+    display: inline-block;
+    vertical-align: middle;
+    background-position: 0 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    margin-right: 7px;
+}
+
+
+.m-recom span {
+    display: inline-block;
+    -webkit-box-flex: 1;
+    flex: 1;
+    width: 1%;
+    padding-right: 10px;
+    font-size: 15px;
+    line-height: 45px;
+    color: #333;
+}
+
+
