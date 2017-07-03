@@ -86,12 +86,20 @@ $(function () {
 
         timer = setTimeout(function () {
             search(value).then((result) => {
+                timer = undefined
                 if (result.length !== 0) {
-                    $('#output').text(result.map((r) => r.name).join(','))
+/*                    $('#output').text(result.map((r) => r.name).join(','))
                     result.map(function (result) {
-                        let $li = `<li class="recomitem"><i class="u-svg u-svg-search"></i><span class="f-bd f-bd-btm f-thide">${result.name}</span></li>`
+                        let $li = `<li class="recomitem"><a href="./song.html?id=${result.id}"><i class="u-svg u-svg-search"></i><span class="f-bd f-bd-btm f-thide">${result.name}</span></a></li>`
                         $('#output').html($li)
+                    })*/
+                    $('#output').empty()
+                    let $ul = $('<ul></ul>')
+                    result.forEach((item)=>{
+                        let $li = $(`<a href="./song.html?id=${item.id}"><li class="recomitem"><i class="u-svg u-svg-search"></i><span class="f-bd f-bd-btm f-thide">${item.name}</span></li></a>`)
+                        $li.appendTo($ul)
                     })
+                    $('#output').append($ul)
                 } else {
                     let $li = `<li class="recomitem"><span class="f-bd f-bd-btm f-thide">没有结果</span></li>`
                     $('#output').html($li)
@@ -105,7 +113,8 @@ $(function () {
         return new Promise((resolve, reject) => {
             var database = [
                 {"id": 1, "name": "Faded"},
-                {"id": 2, "name": "演员"}
+                {"id": 2, "name": "演员"},
+                {"id": 1, "name": "Faded&Faded"}
             ]
             let result = database.filter(function (item) {
                 return item.name.indexOf(keyword) >= 0
