@@ -1,0 +1,26 @@
+{
+  "name": "neteasemusic",
+  "version": "1.0.0",
+  "description": "(预览)[https://gl09025.github.io/demos/NetEaseMusic]",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd build; static",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "babel-preset-env": "^1.5.2",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-clean-css": "^3.5.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "node-static": "^0.7.9"
+  }
+}
