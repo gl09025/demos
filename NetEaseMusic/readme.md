@@ -1,4 +1,4 @@
-(预览)[https://gl09025.github.io/demos/NetEaseMusic]
+[预览](https://gl09025.github.io/demos/NetEaseMusic)
 
 
 
