@@ -96,7 +96,7 @@ window.slides = function(element) {
         timerId = setInterval(function() {
             goToSlide(currentIndex + 1)
             becomeActive(currentIndex)
-        }, 3000)
+        }, 300)
     }
     autoPlay()
 
