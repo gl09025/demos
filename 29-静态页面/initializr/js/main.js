@@ -1,7 +1,7 @@
 $(function(){
 
 var swiper = new Swiper('#firstswiper', {
-    pagination: '.swiper-pagination',
+    pagination: '#firstswiper .swiper-pagination',
     effect: 'coverflow',
     grabCursor: true,
     centeredSlides: true,
@@ -15,8 +15,8 @@ var swiper = new Swiper('#firstswiper', {
     }
 });
 
-var swiper2 = new Swiper('.daily-down>.swiper-container', {
-    pagination: '.swiper-pagination',
+var swiper2 = new Swiper('#secondswiper', {
+    pagination: '#secondswiper .swiper-pagination',
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
     paginationClickable: true,
