@@ -6,6 +6,8 @@
 
 [Tabs](https://gl09025.github.io/demos/25-swipper%26tabs/tabs/index.html)
 
+[时钟](https://gl09025.github.io/demos/19-DOM/%E6%97%B6%E9%92%9F/index.html)
+
 [ajax加载图片](https://gl09025.github.io/demos/32-ajax/index.html)
 
 [rem](https://gl09025.github.io/demos/34-rem/rem.html)
