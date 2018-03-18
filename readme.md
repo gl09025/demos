@@ -2,7 +2,7 @@
 
 [3D hover](https://gl09025.github.io/demos/22-3Dhover/%E9%94%A4%E5%AD%90%E5%AE%98%E7%BD%913D%20hover%E6%95%88%E6%9E%9C/index.html)
 
-[简单轮播](https://gl09025.github.io/demos/25-swipper%26tabs/swiper/index.html)
+[渐变效果轮播](https://gl09025.github.io/mission-start/advance-17_%E8%BD%AE%E6%92%AD/shadow.html)
 
 [Tabs](https://gl09025.github.io/demos/25-swipper%26tabs/tabs/index.html)
 
@@ -18,7 +18,7 @@
 
 [网易云音乐](https://gl09025.github.io/demos/NetEaseMusic/index.html)
 
-歌曲放在github加载慢
+- 歌曲放在github，加载较慢
 
 [静态页面1](https://gl09025.github.io/demos/psdToHtml/index.html)
 
